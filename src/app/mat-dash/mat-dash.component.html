@@ -1,0 +1,26 @@
+<div class="grid-container">
+  <h1 class="mat-h1">NG-Conf</h1>
+  <mat-card class="additionalInfo">
+    <mat-card-content>
+      This page is created using new Angular 6, and new Angular Material version. <br>
+      Videos added balow is based on what I found the most interesting on last NG-Conf. <br>
+      Take a look at it, let's discuss what you're found interesting!
+    </mat-card-content>
+  </mat-card>
+  <mat-grid-list cols="2" rowHeight="502px">
+    <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows" [ngClass]="card.iFrame">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <iframe width="100%" height="400px" [src]="card.iFrame | safe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

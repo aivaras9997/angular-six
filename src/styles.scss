@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	margin: 0 auto;
+	background-color: #303030;
+	.mat-card-header .mat-card-title, .mat-card-subtitle {
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.more-button{
+		top: 9px !important;
+	}
+	.additionalInfo{
+		background: #252525;
+		text-align: center;
+		.mat-card-content{
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 22px;
+			letter-spacing: 1px;
+    		word-spacing: 1px;
+		}
+	}
+	div#cdk-overlay-0 {
+		color: white;
+		font-family: Roboto,"Helvetica Neue",sans-serif;
+		.mat-menu-content{
+			padding: 8px;
+		}
+	}
+}
